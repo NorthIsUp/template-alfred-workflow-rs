@@ -1,0 +1,13 @@
+# This workflow's menu. Format: https://github.com/NorthIsUp/north/tree/main/crates/we-love-alfred
+cache = "my-workflow"
+
+[[item]]
+title = "we-love-alfred docs"
+url = "https://github.com/NorthIsUp/north/tree/main/crates/we-love-alfred"
+
+# `my gh owner/repo` opens a repository.
+[[route]]
+pattern = '(?i)^gh (\S+/\S+)$'
+[[route.item]]
+title = "Open {1} on GitHub"
+url = "https://github.com/{1}"
