@@ -22,8 +22,7 @@ Tailscale and self-updates.
 ## Develop
 
 ```sh
-mise install           # rust with the Apple targets, hk, pkl
-cargo install cargo-edit
+mise install           # rust with the Apple targets, hk, pkl, cargo-edit
 mise run test
 mise run install       # build dist/<name>.alfredworkflow and open it in Alfred
 ```
