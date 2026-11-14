@@ -15,7 +15,8 @@ Tailscale and self-updates.
 ## Make it yours
 
 1. In `Cargo.toml`, set `name`, `description` and `repository`.
-2. In `workflow/workflow.toml`, set `cache` and replace the example items.
+2. In `workflow/workflow.toml`, set `cache`, point `[update]` at your repo, and replace the
+   example items.
 3. In `workflow/info.plist`, set `bundleid`, `name`, the Script Filter `keyword`
    and `title`, or open the workflow in Alfred and edit it there.
 
@@ -31,7 +32,12 @@ mise run install       # build dist/<name>.alfredworkflow and open it in Alfred
 `workflow/alfred`, copies the `Cargo.toml` version into `info.plist`, and zips
 `workflow/` into `dist/<name>.alfredworkflow`.
 
-## Release
+## Updates and releases
+
+Installed copies update themselves: they check GitHub daily and open newer releases, and
+`update` or `<keyword> update` checks now. `clear cache` (or `<keyword> clear cache`) resets the
+workflow's caches.
+
 
 `mise run bump-patch` (or `-minor`, `-major`), commit, and push to `main`. CI
 tags `v<version>` and attaches the `.alfredworkflow` to a GitHub release.

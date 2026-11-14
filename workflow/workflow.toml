@@ -1,6 +1,12 @@
 # This workflow's menu. Format: https://github.com/NorthIsUp/north/tree/main/crates/we-love-alfred
 cache = "my-workflow"
 
+# Installed copies check GitHub daily and open newer releases, so Alfred offers its update dialog.
+# `update` (or `<keyword> update`) checks now with live progress. Set this to your repo.
+[update]
+repo = "OWNER/my-workflow"
+asset = "my-workflow.alfredworkflow"
+
 [[item]]
 title = "we-love-alfred docs"
 url = "https://github.com/NorthIsUp/north/tree/main/crates/we-love-alfred"

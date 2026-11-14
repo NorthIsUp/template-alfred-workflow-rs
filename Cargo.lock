@@ -1911,7 +1911,7 @@ dependencies = [
 [[package]]
 name = "we-love-alfred"
 version = "0.1.0"
-source = "git+https://github.com/NorthIsUp/north#0a4eca827098a7626ab86cd9c18b26ea3c6f0ade"
+source = "git+https://github.com/NorthIsUp/north#952c546fd732d3d76c3f331f3d238b294770029a"
 dependencies = [
  "chrono",
  "flate2",
