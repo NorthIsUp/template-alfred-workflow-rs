@@ -6,6 +6,7 @@ cache = "my-workflow"
 [update]
 repo = "OWNER/my-workflow"
 asset = "my-workflow.alfredworkflow"
+# clear_cache = true   # clear cached menus and data once after each update
 
 [[item]]
 title = "we-love-alfred docs"
